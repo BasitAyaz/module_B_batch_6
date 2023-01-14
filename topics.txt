@@ -1,0 +1,135 @@
+ ECMA Script
+ European Code Managemenr Administration
+
+ ES6 Topics
+
+ var,let,const
+ hoisting
+ Template Literals
+ ternary operators
+ Circuits
+ Object Methods (keys,values,freez,entries)
+ spread Operators
+ rest operators
+ destructuring
+ Pass By value and Pass By Reference
+ promise
+ async await
+
+ === functions ===
+ 1: higher order
+ 2: callback function
+ 3: Arrow function
+ 4: Closures
+ 5: lexical scoping
+ 6: default peramter
+ === Array Methods ===
+ 1: map
+ 2: filter
+ 3: foreach
+ 4: reduce
+ 5: some
+ 6: find
+ 7: findIndex
+ 8: flat
+
+ === ES9 ===
+ optional chaining
+ nullish
+
+ var a = {
+   mobiles: {
+     samsung: {
+       a30: {
+         name: "a30",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 2000,
+       },
+       note10: {
+         name: "note10",
+         ram: "6gb",
+         rom: "128gb",
+         camera: "50px",
+         price: 4000,
+       },
+       s10: {
+         name: "s10",
+         ram: "3gb",
+         rom: "128gb",
+         camera: "10px",
+         price: 5000,
+       },
+     },
+     iphone: {
+       iphone4: {
+         name: "iphone4",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 10000,
+       },
+       iphone4s: {
+         name: "iphone4s",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 20000,
+       },
+       iphone5: {
+         name: "iphone5",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 30000,
+       },
+       iphone6: {
+         name: "iphone6",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 30000,
+       },
+     },
+     xiomi: {
+       redminote10: {
+         name: "redminote10",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 10000,
+       },
+       redminote11: {
+         name: "redminote11",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 10000,
+       },
+       redmi10: {
+         name: "redmi10",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 10000,
+       },
+       redmi10pro: {
+         name: "redmi10pro",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 10000,
+       },
+     },
+     oppo: {
+       a3s: {
+         name: "a3s",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 10000,
+       },
+     },
+   },
+ };
