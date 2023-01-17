@@ -182,76 +182,188 @@
 
 // console.log(obj);
 
+// let arr = [
+//   {
+//     id: 1,
+//     name: "ABC",
+//     category: "A",
+//     city: "Karachi",
+//   },
+//   {
+//     id: 2,
+//     name: "MNO",
+//     category: "C",
+//     city: "Karachi",
+//   },
+//   {
+//     id: 3,
+//     name: "XYZ",
+//     category: "A",
+//     city: "Karachi",
+//   },
+//   {
+//     id: 4,
+//     name: "QWE",
+//     category: "A",
+//     city: "Lahore",
+//   },
+//   {
+//     id: 5,
+//     name: "TZR",
+//     category: "A",
+//     city: "Karachi",
+//   },
+//   {
+//     id: 6,
+//     name: "AMJ",
+//     category: "A",
+//     city: "Islamabad",
+//   },
+//   {
+//     id: 7,
+//     name: "LKO",
+//     category: "B",
+//     city: "Karachi",
+//   },
+//   {
+//     id: 8,
+//     name: "BAO",
+//     category: "A",
+//     city: "Karachi",
+//   },
+//   {
+//     id: 9,
+//     name: "PLK",
+//     category: "B",
+//     city: "Karachi",
+//   },
+// ];
+
+// let labels = Object.keys(arr[0]);
+// let a = document.getElementById("header");
+// let b = document.getElementById("body");
+
+// for (let i = 0; i < labels.length; i++) {
+//   a.innerHTML += `<th>${labels[i]}</th>`;
+// }
+// for (let i = 0; i < arr.length; i++) {
+//   let x = arr[i];
+//   b.innerHTML += `<tr>
+//   <td>${x.id}</td>
+//   <td>${x.name}</td>
+//   <td>${x.category}</td>
+//   <td>${x.city}</td>
+//   </tr>`;
+// }
+
+// =====  Spread Operator =====
+
+// let config = {
+//   inst:'SAIMS',
+//   course:'Web and Mobile',
+//   batch:6,
+//   year:2023
+// }
+// let std1 = {
+//   ...config,
+//   name:'Abu Bakar',
+//   age:18,
+//   sec:'A',
+// }
+
+// console.log(std1)
+
+// let a = ['a','b','c']
+// let c = [1,...a,2,3]
+
+// console.log(c)
+
+// let a = {
+//   name:'ABC'
+// }
+// let b = {...a}
+
+// b.id = 123
+
+// console.log(a,b)
+
+// let a = ['a','b','c']
+
+// let b = [...a]
+
+// b.push(123)
+// console.log(a,b)
+
+// let a = [
+//   {
+//     name: "ABC",
+//     id: 1,
+//     details: {
+//       city: "Karachi",
+//       country: "Pak",
+//     },
+//   },
+// ];
+// let b = JSON.parse(JSON.stringify([...a]))
+
+// delete b[0].details;
+// console.log(a,b);
+
+// =====  Rest Operators =====
+
+// function abc(...rest){
+//   console.log(rest)
+// }
+// abc(1,2,3,4)
+
+// =====  DeStructure =====
+
+// let dataFromLocalStorage = {
+//   id:1,
+//   name:'ABC',
+//   userName:'abc123',
+//   contact:'12345687'
+// }
+
+// let {userName,name,id,contact} = dataFromLocalStorage
+
+// console.log(userName)
+// console.log(name)
+// console.log(id)
+// console.log(contact)
+
+// let arr = ['abc','mno','pqr','jkl','xyz']
+
+// let [a,b,,d] = arr
+
+// console.log(d)
+
 let arr = [
-  {
-    id: 1,
-    name: "ABC",
-    category: "A",
-    city: "Karachi",
-  },
-  {
-    id: 2,
-    name: "MNO",
-    category: "C",
-    city: "Karachi",
-  },
-  {
-    id: 3,
-    name: "XYZ",
-    category: "A",
-    city: "Karachi",
-  },
-  {
-    id: 4,
-    name: "QWE",
-    category: "A",
-    city: "Lahore",
-  },
-  {
-    id: 5,
-    name: "TZR",
-    category: "A",
-    city: "Karachi",
-  },
-  {
-    id: 6,
-    name: "AMJ",
-    category: "A",
-    city: "Islamabad",
-  },
-  {
-    id: 7,
-    name: "LKO",
-    category: "B",
-    city: "Karachi",
-  },
-  {
-    id: 8,
-    name: "BAO",
-    category: "A",
-    city: "Karachi",
-  },
-  {
-    id: 9,
-    name: "PLK",
-    category: "B",
-    city: "Karachi",
-  },
+  2,
+  2,
+  3,
+  "abc",
+  "ty",
+  [
+    true,
+    { 
+      id: 374, 
+      details: [
+      { 
+        id: 1, 
+        name: "Abu Bakar", 
+        dt: [
+          1, 
+          2, 
+          3, 
+          4, 
+          5
+        ] 
+      }
+    ]
+   },
+  ],
 ];
 
-let labels = Object.keys(arr[0]);
-let a = document.getElementById("header");
-let b = document.getElementById("body");
-
-for (let i = 0; i < labels.length; i++) {
-  a.innerHTML += `<th>${labels[i]}</th>`;
-}
-for (let i = 0; i < arr.length; i++) {
-  let x = arr[i];
-  b.innerHTML += `<tr>
-  <td>${x.id}</td>
-  <td>${x.name}</td>
-  <td>${x.category}</td>
-  <td>${x.city}</td>
-  </tr>`;
-}
+let {name} = arr[5][1].details[0]
+console.log(name)

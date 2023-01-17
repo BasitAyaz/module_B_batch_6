@@ -13,8 +13,6 @@
  rest operators
  destructuring
  Pass By value and Pass By Reference
- promise
- async await
 
  === functions ===
  1: higher order
@@ -23,7 +21,8 @@
  4: Closures
  5: lexical scoping
  6: default peramter
- === Array Methods ===
+ 
+ === Array Functions ===
  1: map
  2: filter
  3: foreach
@@ -32,6 +31,9 @@
  6: find
  7: findIndex
  8: flat
+
+ promise
+ async await
 
  === ES9 ===
  optional chaining
