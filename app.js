@@ -338,32 +338,69 @@
 
 // console.log(d)
 
-let arr = [
-  2,
-  2,
-  3,
-  "abc",
-  "ty",
-  [
-    true,
-    { 
-      id: 374, 
-      details: [
-      { 
-        id: 1, 
-        name: "Abu Bakar", 
-        dt: [
-          1, 
-          2, 
-          3, 
-          4, 
-          5
-        ] 
-      }
-    ]
-   },
-  ],
-];
+// let arr = [
+//   2,
+//   2,
+//   3,
+//   "abc",
+//   "ty",
 
-let {name} = arr[5][1].details[0]
-console.log(name)
+//   [
+//     //5th index
+//     true,
+//     {
+//       id: 374,
+//       details: [
+//         {
+//           id: 1,
+//           name: "Abu Bakar",
+//           dt: [1, 2, 3, 4, 5],
+//         },
+//       ],
+//     },
+//   ],
+// ];
+// const obj = arr[5][1].details[0];
+// let { name } = obj;
+// let [a, b] = obj.dt;
+
+// console.log(a, b);
+
+// === Higher Order Functions ===
+
+// === Call Back Functions ===
+
+// function abc(a) {
+//   console.log(a);
+// }
+// function xyz(x) {
+//   return x;
+// }
+
+// abc(xyz("Abdul Basit Ahmed"));
+
+// function abc(a) {
+//   console.log(a);
+//   return function (b) {
+//     console.log(b);
+//   };
+// }
+
+// abc("ABC")("XYZ")
+
+// let a = function () {
+//   console.log("ABC");
+// };
+// a();
+
+// let b = (a) => {
+//   console.log(a);
+// };
+// b("ABC");
+
+// let a = (() => {
+//   return "ABC";
+// })();
+
+// console.log(a);
+
