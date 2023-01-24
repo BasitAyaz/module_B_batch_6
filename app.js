@@ -404,3 +404,120 @@
 
 // console.log(a);
 
+// const arr = a => {
+//  return a
+// };
+
+// let abc = a => "ABC";
+
+// === Lexical Scoping ===
+
+// let a = "ABC";
+// let abc = () => {
+//     let a = 123;
+//   console.log(a);
+// };
+// abc();
+
+// let abc = (a = 456) => {
+//   console.log(a);
+// };
+
+// abc("ABC");
+// abc(123);
+// abc();
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// let b = arr.forEach((e, i) => {
+//   e * 2;
+//   console.log(e);
+// });
+// console.log(b);
+
+// arr.map((e, i) => {
+//   console.log(e);
+//   return e;
+// });
+
+let arr = [
+  {
+    id: 1,
+    name: "ABC",
+    category: "C",
+  },
+  {
+    id: 2,
+    name: "XYZ",
+    category: "A",
+  },
+  {
+    id: 3,
+    name: "MNO",
+    category: "A",
+  },
+  {
+    id: 4,
+    name: "JKL",
+    category: "B",
+  },
+  {
+    id: 5,
+    name: "LPO",
+    category: "C",
+  },
+  {
+    id: 6,
+    name: "TYU",
+    category: "A",
+  },
+  {
+    id: 7,
+    name: "LKJ",
+    category: "B",
+  },
+  {
+    id: 8,
+    name: "OLK",
+    category: "A",
+  },
+  {
+    id: 9,
+    name: "JHG",
+    category: "B",
+  },
+  {
+    id: 10,
+    name: "ERT",
+    category: "A",
+  },
+];
+
+// let ids = arr.map((x) => ({ name: x.name, category: x.category }));
+
+// console.log(ids);
+
+// let arr2 = arr
+//   .filter((x) => {
+//     if (x.category == "A") {
+//       return x;
+//     }
+//   })
+//   .map((x) => x.id);
+
+// let arr2 = arr
+//   .map((x) => {
+//     if (x.category == "A") {
+//       return x.id;
+//     }
+//   }).filter(Boolean)
+
+// console.log(arr2);
+
+let obj = {
+  id: 10,
+  name: "ERT",
+  category: "A",
+};
+
+

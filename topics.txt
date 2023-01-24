@@ -135,3 +135,63 @@
      },
    },
  };
+
+
+let arr = [
+      {
+         name: "a30",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 2000,
+       },
+      {
+         name: "a30",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 2000,
+       },
+      {
+         name: "a30",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 2000,
+       },
+      {
+         name: "a30",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 2000,
+       },
+      {
+         name: "a30",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 2000,
+       },
+      {
+         name: "a30",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 2000,
+       },
+      {
+         name: "a30",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 2000,
+       },
+      {
+         name: "a30",
+         ram: "4gb",
+         rom: "64gb",
+         camera: "50px",
+         price: 2000,
+       },
+]
