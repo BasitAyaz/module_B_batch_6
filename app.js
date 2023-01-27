@@ -514,10 +514,155 @@ let arr = [
 
 // console.log(arr2);
 
-let obj = {
-  id: 10,
-  name: "ERT",
-  category: "A",
-};
+let mobiles = [
+  {
+    name: "a30",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 2000,
+    brand: "samsung",
+  },
+  {
+    name: "note10",
+    ram: "6gb",
+    rom: "128gb",
+    camera: "50px",
+    price: 4000,
+    brand: "samsung",
+  },
+  {
+    name: "s10",
+    ram: "3gb",
+    rom: "128gb",
+    camera: "10px",
+    price: 5000,
+    brand: "samsung",
+  },
+  {
+    name: "iphone4",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 10000,
+    brand: "iphone",
+  },
+  {
+    name: "iphone4s",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 20000,
+    brand: "iphone",
+  },
+  {
+    name: "iphone5",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 30000,
+    brand: "iphone",
+  },
+  {
+    name: "iphone6",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 30000,
+    brand: "iphone",
+  },
+  {
+    name: "redminote10",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 10000,
+    brand: "xiaomi",
+  },
+  {
+    name: "redminote11",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 10000,
+    brand: "xiaomi",
+  },
+  {
+    name: "redmi10",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 10000,
+    brand: "xiaomi",
+  },
+  {
+    name: "redmi10pro",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 10000,
+    brand: "xiaomi",
+  },
+  {
+    name: "a3s",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 10000,
+    brand: "oppo",
+  },
+  {
+    name: "a3s",
+    ram: "4gb",
+    rom: "64gb",
+    camera: "50px",
+    price: 10000,
+    brand: "Realmi",
+  },
+];
 
+// let ind = mobiles.findIndex((x) => x.name == "redmi10pro");
+// console.log(ind);
 
+// let status = mobiles.some((x) => x.name == "1+");
+// console.log(status);
+
+let arr1 = [1, 2, 3, ["a", "b", "c", ["1a", "2a", "3a", [1, 2, 3]]]];
+arr1 = arr1.flat(3);
+console.log(arr1);
+
+let numArr = [1, 2, 34, 53, 1, 2, 31, 2, 3, 1, 5, 3, 1, 1];
+let c = Math.max(...numArr);
+console.log(c);
+
+let brands = mobiles.map((x) => x.brand);
+brands = [...new Set(brands)];
+
+let models;
+
+let a = document.getElementById("brand");
+let modelSelect = document.getElementById("model");
+
+function init() {
+  brands.forEach((x) => {
+    a.innerHTML += `<option value='${x}'>${x}</option>`;
+  });
+}
+init();
+
+function getBrand() {
+  models = mobiles.filter((x) => x.brand == a.value).map((x) => x.name);
+
+  modelSelect.innerHTML = "";
+
+  models.forEach((x) => {
+    modelSelect.innerHTML += `<option value='${x}'>${x}</option>`;
+  });
+}
+
+function searchMob() {
+  let obj = mobiles.find(
+    (x) => x.brand == a.value && x.name == modelSelect.value
+  );
+  console.log(obj);
+}
