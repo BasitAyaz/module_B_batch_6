@@ -440,58 +440,58 @@
 //   return e;
 // });
 
-let arr = [
-  {
-    id: 1,
-    name: "ABC",
-    category: "C",
-  },
-  {
-    id: 2,
-    name: "XYZ",
-    category: "A",
-  },
-  {
-    id: 3,
-    name: "MNO",
-    category: "A",
-  },
-  {
-    id: 4,
-    name: "JKL",
-    category: "B",
-  },
-  {
-    id: 5,
-    name: "LPO",
-    category: "C",
-  },
-  {
-    id: 6,
-    name: "TYU",
-    category: "A",
-  },
-  {
-    id: 7,
-    name: "LKJ",
-    category: "B",
-  },
-  {
-    id: 8,
-    name: "OLK",
-    category: "A",
-  },
-  {
-    id: 9,
-    name: "JHG",
-    category: "B",
-  },
-  {
-    id: 10,
-    name: "ERT",
-    category: "A",
-  },
-];
+// let arr = [
+//   {
+//     id: 1,
+//     name: "ABC",
+//     category: "C",
+//   },
+//   {
+//     id: 2,
+//     name: "XYZ",
+//     category: "A",
+//   },
+//   {
+//     id: 3,
+//     name: "MNO",
+//     category: "A",
+//   },
+//   {
+//     id: 4,
+//     name: "JKL",
+//     category: "B",
+//   },
+//   {
+//     id: 5,
+//     name: "LPO",
+//     category: "C",
+//   },
+//   {
+//     id: 6,
+//     name: "TYU",
+//     category: "A",
+//   },
+//   {
+//     id: 7,
+//     name: "LKJ",
+//     category: "B",
+//   },
+//   {
+//     id: 8,
+//     name: "OLK",
+//     category: "A",
+//   },
+//   {
+//     id: 9,
+//     name: "JHG",
+//     category: "B",
+//   },
+//   {
+//     id: 10,
+//     name: "ERT",
+//     category: "A",
+//   },
+// ];
 
 // let ids = arr.map((x) => ({ name: x.name, category: x.category }));
 
@@ -514,112 +514,112 @@ let arr = [
 
 // console.log(arr2);
 
-let mobiles = [
-  {
-    name: "a30",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 2000,
-    brand: "samsung",
-  },
-  {
-    name: "note10",
-    ram: "6gb",
-    rom: "128gb",
-    camera: "50px",
-    price: 4000,
-    brand: "samsung",
-  },
-  {
-    name: "s10",
-    ram: "3gb",
-    rom: "128gb",
-    camera: "10px",
-    price: 5000,
-    brand: "samsung",
-  },
-  {
-    name: "iphone4",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 10000,
-    brand: "iphone",
-  },
-  {
-    name: "iphone4s",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 20000,
-    brand: "iphone",
-  },
-  {
-    name: "iphone5",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 30000,
-    brand: "iphone",
-  },
-  {
-    name: "iphone6",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 30000,
-    brand: "iphone",
-  },
-  {
-    name: "redminote10",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 10000,
-    brand: "xiaomi",
-  },
-  {
-    name: "redminote11",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 10000,
-    brand: "xiaomi",
-  },
-  {
-    name: "redmi10",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 10000,
-    brand: "xiaomi",
-  },
-  {
-    name: "redmi10pro",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 10000,
-    brand: "xiaomi",
-  },
-  {
-    name: "a3s",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 10000,
-    brand: "oppo",
-  },
-  {
-    name: "a3s",
-    ram: "4gb",
-    rom: "64gb",
-    camera: "50px",
-    price: 10000,
-    brand: "Realmi",
-  },
-];
+// let mobiles = [
+//   {
+//     name: "a30",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 2000,
+//     brand: "samsung",
+//   },
+//   {
+//     name: "note10",
+//     ram: "6gb",
+//     rom: "128gb",
+//     camera: "50px",
+//     price: 4000,
+//     brand: "samsung",
+//   },
+//   {
+//     name: "s10",
+//     ram: "3gb",
+//     rom: "128gb",
+//     camera: "10px",
+//     price: 5000,
+//     brand: "samsung",
+//   },
+//   {
+//     name: "iphone4",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 10000,
+//     brand: "iphone",
+//   },
+//   {
+//     name: "iphone4s",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 20000,
+//     brand: "iphone",
+//   },
+//   {
+//     name: "iphone5",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 30000,
+//     brand: "iphone",
+//   },
+//   {
+//     name: "iphone6",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 30000,
+//     brand: "iphone",
+//   },
+//   {
+//     name: "redminote10",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 10000,
+//     brand: "xiaomi",
+//   },
+//   {
+//     name: "redminote11",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 10000,
+//     brand: "xiaomi",
+//   },
+//   {
+//     name: "redmi10",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 10000,
+//     brand: "xiaomi",
+//   },
+//   {
+//     name: "redmi10pro",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 10000,
+//     brand: "xiaomi",
+//   },
+//   {
+//     name: "a3s",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 10000,
+//     brand: "oppo",
+//   },
+//   {
+//     name: "a3s",
+//     ram: "4gb",
+//     rom: "64gb",
+//     camera: "50px",
+//     price: 10000,
+//     brand: "Realmi",
+//   },
+// ];
 
 // let ind = mobiles.findIndex((x) => x.name == "redmi10pro");
 // console.log(ind);
@@ -627,42 +627,64 @@ let mobiles = [
 // let status = mobiles.some((x) => x.name == "1+");
 // console.log(status);
 
-let arr1 = [1, 2, 3, ["a", "b", "c", ["1a", "2a", "3a", [1, 2, 3]]]];
-arr1 = arr1.flat(3);
-console.log(arr1);
+// let arr1 = [1, 2, 3, ["a", "b", "c", ["1a", "2a", "3a", [1, 2, 3]]]];
+// arr1 = arr1.flat(3);
+// console.log(arr1);
 
-let numArr = [1, 2, 34, 53, 1, 2, 31, 2, 3, 1, 5, 3, 1, 1];
-let c = Math.max(...numArr);
-console.log(c);
+// let numArr = [1, 2, 34, 53, 1, 2, 31, 2, 3, 1, 5, 3, 1, 1];
+// let c = Math.max(...numArr);
+// console.log(c);
 
-let brands = mobiles.map((x) => x.brand);
-brands = [...new Set(brands)];
+// let brands = mobiles.map((x) => x.brand);
+// brands = [...new Set(brands)];
 
-let models;
+// let models;
 
-let a = document.getElementById("brand");
-let modelSelect = document.getElementById("model");
+// let a = document.getElementById("brand");
+// let modelSelect = document.getElementById("model");
 
-function init() {
-  brands.forEach((x) => {
-    a.innerHTML += `<option value='${x}'>${x}</option>`;
-  });
-}
-init();
+// function init() {
+//   brands.forEach((x) => {
+//     a.innerHTML += `<option value='${x}'>${x}</option>`;
+//   });
+// }
+// init();
 
-function getBrand() {
-  models = mobiles.filter((x) => x.brand == a.value).map((x) => x.name);
+// function getBrand() {
+//   models = mobiles.filter((x) => x.brand == a.value).map((x) => x.name);
 
-  modelSelect.innerHTML = "";
+//   modelSelect.innerHTML = "";
 
-  models.forEach((x) => {
-    modelSelect.innerHTML += `<option value='${x}'>${x}</option>`;
-  });
-}
+//   models.forEach((x) => {
+//     modelSelect.innerHTML += `<option value='${x}'>${x}</option>`;
+//   });
+// }
 
-function searchMob() {
-  let obj = mobiles.find(
-    (x) => x.brand == a.value && x.name == modelSelect.value
-  );
-  console.log(obj);
-}
+// function searchMob() {
+//   let obj = mobiles.find(
+//     (x) => x.brand == a.value && x.name == modelSelect.value
+//   );
+//   console.log(obj);
+// }
+
+// let MujtabaKaRishta = (mujtabaKaApnaGhar, mujtabaKiBike, mujtabaKiSalary) => {
+//   return new Promise((han, na) => {
+//     if (
+//       mujtabaKaApnaGhar == true &&
+//       mujtabaKiBike == true &&
+//       mujtabaKiSalary > 80
+//     ) {
+//       han("Rishta Pakka");
+//     } else {
+//       na("Istikhare main Na hai");
+//     }
+//   });
+// };
+
+// MujtabaKaRishta(true, true, 90)
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
