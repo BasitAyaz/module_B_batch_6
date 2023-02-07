@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
+import Button from "./components/Button";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,17 +15,30 @@ function App() {
     setArr([...arr]);
   };
 
-  let edit = (i)=>{
+  let edit = (i) => {
     // get prompt
-    // arr[i] == prompt value
-    // set State of Array
-  }
+    let a = prompt("Enter Value", arr[i]);
 
+    // arr[i] = prompt value
+    arr[i] = a;
+
+    // set State of Array
+    setArr([...arr]);
+  };
+
+  let del = (i) => {
+    arr.splice(i, 1);
+    setArr([...arr]);
+  };
   return (
     <div className="App">
       <header className="App-header">
         {arr.map((x, i) => (
-          <p>{x} <button onClick={()=>del(i)}></button></p>
+          <p>
+            {x}
+            <button onClick={() => del(i)}>Delete</button>
+            <button onClick={() => edit(i)}>Edit</button>
+          </p>
         ))}
 
         <input
@@ -33,10 +47,11 @@ function App() {
           }}
           placeholder="Enter Text"
         />
-
+  
         <p>{text}</p>
 
         <button onClick={add}>Add</button>
+        <Button click={add} className="dark-button" label="Add Todo" />
       </header>
     </div>
   );
