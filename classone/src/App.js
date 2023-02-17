@@ -1,44 +1,53 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import ShowData from "./components/showdata";
+import SMButton from "./components/SMButton";
+import SMInput from "./components/SMinput";
+import SearchIcon from '@mui/icons-material/Search';
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [arr, setArr] = useState(["akjhsd", "asjhdkl"]);
-
-  const [text, setText] = useState("");
-
-  let add = () => {
-    arr.push(text);
-    console.log(arr);
-    setArr([...arr]);
-  };
-
-  let edit = (i)=>{
-    // get prompt
-    // arr[i] == prompt value
-    // set State of Array
-  }
-
+  const [selectedRow,setSelectedRow] = useState({})
+  let arr = [
+    {
+      id:1,
+      title:'abc',
+      desc:'ABCak da sakjs dlka slkas jl',    
+    },   
+    {
+      id:1,
+      title:'abc',
+      desc:'ABCak da sakjs dlka slkas jl',    
+    },   
+    {
+      id:1,
+      title:'abc',
+      desc:'ABCak da sakjs dlka slkas jl',    
+    },   
+    {
+      id:1,
+      title:'abc',
+      desc:'ABCak da sakjs dlka slkas jl',    
+    },   
+    {
+      id:1,
+      title:'abc',
+      desc:'ABCak da sakjs dlka slkas jl',    
+    },   
+    {
+      id:1,
+      title:'abc',
+      desc:'ABCak da sakjs dlka slkas jl',    
+    },   
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        {arr.map((x, i) => (
-          <p>{x} <button onClick={()=>del(i)}></button></p>
-        ))}
-
-        <input
-          onChange={(e) => {
-            setText(e.target.value);
-          }}
-          placeholder="Enter Text"
-        />
-
-        <p>{text}</p>
-
-        <button onClick={add}>Add</button>
-      </header>
+  <>
+  <div>
+    <ShowData onRowClick={(row)=>console.log(row)} data={arr} />
     </div>
+    <SMButton endIcon={<SearchIcon />} onClick={()=>console.log('Add Click')} label='Add' />
+    <SMInput label="Email" />
+    
+  </>    
   );
 }
 
