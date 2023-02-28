@@ -6,6 +6,7 @@ function Posts() {
   let api = "https://jsonplaceholder.typicode.com/photos";
 
   const [listData, setListData] = useState([]);
+  const [isLoading, setisLoading] = useState([]);
   let getData = () => {
     axios
       .get(api)

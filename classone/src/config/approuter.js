@@ -3,6 +3,8 @@ import Home from "../screens/home";
 import About from "../screens/about";
 import Posts from "../screens/post";
 import SinglePost from "../screens/singlepost";
+import Comments from "../screens/comments";
+import CommentsForm from "../screens/commentsform";
 
 export default function AppRouter() {
   return (
@@ -18,6 +20,9 @@ export default function AppRouter() {
           <Route path="about" element={<About />} />
           <Route path="post" element={<Posts />} />
           <Route path="singlepost/:id" element={<SinglePost />} />
+          <Route path="comments" element={<Comments />} />
+          <Route path="commentform" element={<CommentsForm />} />
+          <Route path="commentform/:id" element={<CommentsForm />} />
         </Routes>
       </BrowserRouter>
     </>
