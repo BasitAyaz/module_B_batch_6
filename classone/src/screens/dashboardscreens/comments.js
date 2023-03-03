@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import SMGrid from "../components/SMGrid";
-import { Get } from "../config/apibasemethods";
+import SMGrid from "../../components/SMGrid";
+import { Get } from "../../config/apibasemethods";
 
 function Comments() {
   const [commentsData, setCommentsData] = useState([]);
@@ -27,11 +27,13 @@ function Comments() {
     {
       displayName: "Email",
       key: "email",
+      searchAble: true,
       displayField: (e) => <a href={`mailto:${e.email}`}>{e.email}</a>,
     },
     {
       displayName: "Name",
       key: "name",
+      searchAble: true,
     },
     {
       displayName: "Message",

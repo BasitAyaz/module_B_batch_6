@@ -1,8 +1,28 @@
+import { Box } from "@mui/system";
+import { useState } from "react";
+import SMSerchbar from "./SMSearchbar";
+
 function SMGrid(props) {
   const { title, columns, datasource, onRowClick, isLoading } = props;
+
+  const [filteredList, setFilteredList] = useState([]);
+
   return (
     <div>
-      <h2>{title}</h2>
+      <Box>
+        <h2>{title}</h2>
+        <Box>
+          <SMSerchbar
+            searchList={columns.filter((x) => x.searchAble)}
+            onSearch={(key, val) => {
+              console.log(key, val);
+
+              let dt = datasource.filter((x) => x[key].includes(val));
+              console.log(dt);
+            }}
+          />
+        </Box>
+      </Box>
       {isLoading ? (
         <img
           width="40%"
